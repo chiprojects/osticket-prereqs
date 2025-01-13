@@ -79,8 +79,22 @@ Fill in the following fields under the 'Basics' Tab:
   
 </p>
 
-Skip over the `Disk` and navigate to the `Networking` tab where you can rename your virtual network or leave as is. <strong>`Note`:</strong> Everytime a virtual machine is created in Azure, a virtual network is configured 
+Skip over the `Disk` tab and navigate to the `Networking` tab where you can rename the virtual network or leave as is. <strong>`Note`:</strong> Everytime a virtual machine is created in Azure, a virtual network is configured.
 
+<h3>Assess the Virtual Machine</h3> (Start 13:24/ Ends: 15:44
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=H5XNvBKvTDNT6KHt&t=805)
+
+
+![image](https://github.com/user-attachments/assets/efe6d927-2af9-4343-9a29-9be526e674af)
+
+![image](https://github.com/user-attachments/assets/f3120a6c-5306-4801-8594-e9352fb876b0)
+
+
+![image](https://github.com/user-attachments/assets/1136f7c4-cd82-44d5-9dd9-38474c994391)
+
+
+<h3>Download OS-Ticket Installation Files</h3>
 
 
 
