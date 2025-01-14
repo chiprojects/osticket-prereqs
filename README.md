@@ -119,6 +119,13 @@ Enter the administrative account credentials created earlier in Azure when setti
 
 ![image](https://github.com/user-attachments/assets/9003a851-4e50-41ed-a428-e0205cd8523f)
 
+<h3>Install/Enable IIS `Internet Information Services` with CGI `Common Gateway Interface`</h3>
+
+
+<b>1) Install IIS</b>
+
+In the `VM`, select the `Start` menu: <img src="https://github.com/user-attachments/assets/2cefedd8-2966-4817-ae8d-3ae3eee68ba5" height="3%" width="3%" alt="Windows Start Menu"/>
+
 
 
 
