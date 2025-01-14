@@ -6,7 +6,7 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
+<h2>Full Video Demonstration</h2>
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://youtu.be/OSTgG3tRP6Q?si=JL2NbKHvSpbVbYmF)
 
@@ -107,7 +107,7 @@ Enter the administrative account credentials created earlier in Azure when setti
 ![image](https://github.com/user-attachments/assets/1136f7c4-cd82-44d5-9dd9-38474c994391)
 
 
-<h3>Download and Prepare OS-Ticket Installation Files</h3> (Starts:17:43 / End: 19:16)
+<h3>Download and Prepare OS-Ticket Installation Files</h3> (Starts:17:43 / End:19:16)
 
 [![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=ASNgp2CMuQ2tm0p6&t=1063)
 
@@ -119,12 +119,37 @@ Enter the administrative account credentials created earlier in Azure when setti
 
 ![image](https://github.com/user-attachments/assets/9003a851-4e50-41ed-a428-e0205cd8523f)
 
-<h3>Install/Enable IIS `Internet Information Services` with CGI `Common Gateway Interface`</h3>
+<h3>Install/Enable IIS: Internet Information Services` with CGI: Common Gateway Interface </h3>(Starts: 20:30 / Ends: 22:40)
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=DepU3uh_c-5gtg78&t=1230)
+
+<b>1) Install IIS and Enable Required Features</b>
+
+In the `VM`, select the `Start` menu: <img src="https://github.com/user-attachments/assets/2cefedd8-2966-4817-ae8d-3ae3eee68ba5" height="3%" width="3%" alt="Windows Start Menu"/> and navigate to the following:
+
+> Control Panel > Programs > <u>Programs & Features</u>: `Turn Windows features on and off`
+
+Install IIS with CGI with the following features:
+`Internet Information Services` > World Wide Web Services > Application Development Features > `CGI`
+
+![image](https://github.com/user-attachments/assets/ab6e5d7d-0b59-4060-aa59-725e5db96df9)
+
+<h3>Install PHP Manager and Rewrite Module</h3> (Starts: 23:02 / Ends: 24:33)
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=rNhBY1RWhI0cvSh3&t=1382)
 
 
-<b>1) Install IIS</b>
+<b>1)Install Required osTicket Components</b>
 
-In the `VM`, select the `Start` menu: <img src="https://github.com/user-attachments/assets/2cefedd8-2966-4817-ae8d-3ae3eee68ba5" height="3%" width="3%" alt="Windows Start Menu"/>
+Navigate to the `osTicket-Installation-Files` folder on your desktop and select `PHPManagerForIIS_V1.5.0.msi`and then later `rewrite_amd64_en-US.msi`for installation.
+
+![image](https://github.com/user-attachments/assets/34ca727f-cac8-4c92-a060-abcfdbd46172)
+
+<h3>Setup PHP</h3> (Starts: 23:02 / Ends: 24:33)
+
+<b>1) Create a C:\PHP directory</b>
+
+Navigate to 
 
 
 
