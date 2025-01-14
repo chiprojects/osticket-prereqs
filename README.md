@@ -73,17 +73,28 @@ Fill in the following fields under the 'Basics' Tab:
    - `All Administrative account fields`
 
 <p>
-  <img src="https://github.com/user-attachments/assets/757eb74b-8b2f-478d-a088-235367b060f0" height="80%" width="35%" alt="Creating Resource Group Steps"/>
-  <img src="https://github.com/user-attachments/assets/36045603-f793-4891-9af8-cb5bb7eec961" height="80%" width="35%" alt="Creating Resource Group Steps"/>
-  <img src="https://github.com/user-attachments/assets/948858b3-6a68-486e-922f-b7921c0acc2b" height="80%" width="35%" alt="Creating Resource Group Steps"/>
+  <img src="https://github.com/user-attachments/assets/757eb74b-8b2f-478d-a088-235367b060f0" height="80%" width="35%" alt="Creating a Virtual Machine"/>
+  <img src="https://github.com/user-attachments/assets/36045603-f793-4891-9af8-cb5bb7eec961" height="80%" width="35%" alt="Creating a Virtual Machine"/>
+  <img src="https://github.com/user-attachments/assets/948858b3-6a68-486e-922f-b7921c0acc2b" height="80%" width="35%" alt="Creating a Virtual Machine"/>
   
 </p>
 
-Skip over the `Disk` tab and navigate to the `Networking` tab where you can rename the virtual network or leave as is. <strong>`Note`:</strong> Everytime a virtual machine is created in Azure, a virtual network is configured.
+Skip over the `Disk` tab and navigate to the `Networking` tab where you can rename the virtual network or leave as is. <strong>`Note`:</strong> Everytime a virtual machine is created in Azure, a virtual network is configured. Continue to select `Review & Create` until you see `Create` on the bottom right corner. Wait for the virtual machine to deploy.
 
-<h3>Assess the Virtual Machine</h3> (Start 13:24/ Ends: 15:44
+<img src="https://github.com/user-attachments/assets/c13df216-e678-4eea-afe3-a644f1e09a95" height="80%" width="80%" alt="Creating a Virtual Machine"/>
+
+
+<h3>Assess the Virtual Machine</h3> (Starts 13:24 / Ends: 15:44)
 
 [![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=H5XNvBKvTDNT6KHt&t=805)
+
+<br>1) Open up Remote Desktop Connection</br>
+
+For Window Users: Select the `Start` menu: <img src="https://github.com/user-attachments/assets/2cefedd8-2966-4817-ae8d-3ae3eee68ba5" height="3%" width="3%" alt="Windows Start Menu"/> and type `Remote Desktop Connection`
+
+For Mac Users: Download and install the <a href="https://apps.apple.com/us/app/windows-app/id1295203466?mt=12">`Windows App`</a>
+
+Copy the public IP address from the Overview tab of the virual machine dashboard and paste in the `Computer` field of the `Remote Desktop Connection`
 
 
 ![image](https://github.com/user-attachments/assets/efe6d927-2af9-4343-9a29-9be526e674af)
@@ -91,10 +102,22 @@ Skip over the `Disk` tab and navigate to the `Networking` tab where you can rena
 ![image](https://github.com/user-attachments/assets/f3120a6c-5306-4801-8594-e9352fb876b0)
 
 
+Enter the administrative account credentials created earlier in Azure when setting up the virtual machine and select okay. You're now logged into your remote session🙌🏾
+
 ![image](https://github.com/user-attachments/assets/1136f7c4-cd82-44d5-9dd9-38474c994391)
 
 
-<h3>Download OS-Ticket Installation Files</h3>
+<h3>Download and Prepare OS-Ticket Installation Files</h3> (Starts:17:43 / End: 19:16)
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=ASNgp2CMuQ2tm0p6&t=1063)
+
+<b>1) Within the virtual machine, download the `osTicket-Installation-Files.zip` and unzip it to your desktop </b>
+
+![image](https://github.com/user-attachments/assets/f462fd3c-dfd5-44c2-a11c-ebfe3ee961a2)
+
+<strong> Note:</strong> Notice the distinction between the unzipped and zipped folder:
+
+![image](https://github.com/user-attachments/assets/9003a851-4e50-41ed-a428-e0205cd8523f)
 
 
 
