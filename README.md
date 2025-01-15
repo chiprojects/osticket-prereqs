@@ -119,7 +119,7 @@ Enter the administrative account credentials created earlier in Azure when setti
 
 ![image](https://github.com/user-attachments/assets/9003a851-4e50-41ed-a428-e0205cd8523f)
 
-<h3>Install/Enable IIS: Internet Information Services` with CGI: Common Gateway Interface </h3>(Starts: 20:30 / Ends: 22:40)
+<h3>Install/Enable IIS: Internet Information Services with CGI: Common Gateway Interface </h3>(Starts: 20:30 / Ends: 22:40)
 
 [![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=DepU3uh_c-5gtg78&t=1230)
 
@@ -141,15 +141,42 @@ Install IIS with CGI with the following features:
 
 <b>1)Install Required osTicket Components</b>
 
-Navigate to the `osTicket-Installation-Files` folder on your desktop and select `PHPManagerForIIS_V1.5.0.msi`and then later `rewrite_amd64_en-US.msi`for installation.
+Navigate to the `osTicket-Installation-Files` folder on your desktop and select `PHPManagerForIIS_V1.5.0.msi` and then later `rewrite_amd64_en-US.msi`for installation.
 
 ![image](https://github.com/user-attachments/assets/34ca727f-cac8-4c92-a060-abcfdbd46172)
 
-<h3>Setup PHP</h3> (Starts: 23:02 / Ends: 24:33)
+<h3>Setup PHP</h3> (Starts: 24:39 / Ends: 28:14)
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=D2oG1STS6cBcHuIl&t=1479)
 
 <b>1) Create a C:\PHP directory</b>
 
-Navigate to 
+Navigate to the VM's `C:/` folder and create a new sub-folder named `PHP`. From the `osTicket-Installation-Files` folder, right-click on `PHP 7.3.8: php-7.3.8-nts-Win32-VC15-x86.zip` to extract all files into `C:/PHP`.
+
+![image](https://github.com/user-attachments/assets/d4a787df-c90a-4661-b30a-2f02cdf2f156)
+
+![image](https://github.com/user-attachments/assets/f7520fbd-ae60-4789-ad18-651daa13ba4e)
+
+<b>1)Install Visual C++ Redistributable </b>
+
+Install `VC_redist.x86.exe` from the `osTicket-Installation-Files` folder
+
+![image](https://github.com/user-attachments/assets/da4cdede-9bae-4c7c-b2ef-10ba7e03bd08)
+
+<h3>Install mySQL</h3> (Starts: 28:34 / Ends: 31:28 )
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=WXHTYIJ5K79RP_Os&t=1714)
+
+<b>1)Install mySQL Typical Setup</b>
+
+Navigate to `osTicket-Installation-Files` folder and install MySQL 5.5.62: `mysql-5.5.62-win32.msi` > Choose Setup Type: choose <b>Typical Setup</b>.
+
+Once the installation is complete, the Configuration Wizard should automatically launch
+ >Select 'Standard Configuration' and input a username and password that will be used to access the database.
+
+
+![image](https://github.com/user-attachments/assets/fd96cebf-c8b8-4e1d-b2c3-baa877f43650)
+
 
 
 
