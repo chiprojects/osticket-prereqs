@@ -90,8 +90,6 @@ Skip over the `Disk` tab and navigate to the `Networking` tab where you can rena
 
 <br>1) Open up Remote Desktop Connection</br>
 
-For Window Users: Select the `Start` menu: <img src="https://github.com/user-attachments/assets/2cefedd8-2966-4817-ae8d-3ae3eee68ba5" height="3%" width="3%" alt="Windows Start Menu"/> and type `Remote Desktop Connection`
-
 For Mac Users: Download and install the <a href="https://apps.apple.com/us/app/windows-app/id1295203466?mt=12">`Windows App`</a>
 
 Copy the public IP address from the Overview tab of the virual machine dashboard and paste in the `Computer` field of the `Remote Desktop Connection`
@@ -125,7 +123,7 @@ Enter the administrative account credentials created earlier in Azure when setti
 
 <b>1) Install IIS and Enable Required Features</b>
 
-In the `VM`, select the `Start` menu: <img src="https://github.com/user-attachments/assets/2cefedd8-2966-4817-ae8d-3ae3eee68ba5" height="3%" width="3%" alt="Windows Start Menu"/> and navigate to the following:
+Within the `VM`, select the `Start` menu: <img src="https://github.com/user-attachments/assets/2cefedd8-2966-4817-ae8d-3ae3eee68ba5" height="3%" width="3%" alt="Windows Start Menu"/> and navigate to the following:
 
 > Control Panel > Programs > <u>Programs & Features</u>: `Turn Windows features on and off`
 
@@ -172,10 +170,62 @@ Install `VC_redist.x86.exe` from the `osTicket-Installation-Files` folder
 Navigate to `osTicket-Installation-Files` folder and install MySQL 5.5.62: `mysql-5.5.62-win32.msi` > Choose Setup Type: choose <b>Typical Setup</b>.
 
 Once the installation is complete, the Configuration Wizard should automatically launch
- >Select 'Standard Configuration' and input a username and password that will be used to access the database.
+ >Select 'Standard Configuration' and input a username and password that will be used to access the database later on.
 
 
 ![image](https://github.com/user-attachments/assets/fd96cebf-c8b8-4e1d-b2c3-baa877f43650)
+
+
+<h3>Configure IIS</h3> (Starts: 32:05  / Ends: 35:14 )
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=UwKe-Lt8VPzwr6EO&t=1925)
+
+<b>1)Open `IIS` as an Admin</b>
+
+Within the `VM` select the `Start` menu: <img src="https://github.com/user-attachments/assets/2cefedd8-2966-4817-ae8d-3ae3eee68ba5" height="3%" width="3%" alt="Windows Start Menu"/> and type `Internet Information Services`
+
+![image](https://github.com/user-attachments/assets/20ba1633-4529-4911-b8e5-27e71f03f519)
+
+<b>2)Register PHP</b>
+ 
+Select `PHP Manager` on the home menu > Register New PHP Version > Select path: `C:\PHP\php-cgi.exe`
+
+![image](https://github.com/user-attachments/assets/5a364f0f-e865-4b20-9ac0-146a3b6d5ed4)
+
+<b>3)Reload IIS</b>
+
+`Stop` and `Start` the server
+
+![image](https://github.com/user-attachments/assets/b1f06493-2769-4774-8b7a-b8abf905077d)
+
+<h3>Install osTicket</h3> (Starts: 35:15  / Ends: 39:12 )
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=0lnTDM1AlVwn-Eci&t=2115)
+
+<b>1)Install `osTicket v1.15.8`</b>
+
+From the `osTicket-Installation-Files` folder unzip `osTicket-v1.15.8.zip` and copy the `upload` folder into `C:\inetpub\wwwroot`. Now rename the `upload` folder `osTicket`
+
+![image](https://github.com/user-attachments/assets/7a4194b9-076a-4463-beda-74e9ed5b5dc7)
+
+<b>2)Reload IIS</b>
+
+`Stop` and `Start` the server
+
+![image](https://github.com/user-attachments/assets/bf3bdbfe-fb60-4316-9f6d-0ce5667cc920)
+
+<h3>Configure osTicket</h3> (Starts: 45:03  / Ends: )
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=eiBOqEK14c_zxCmm&t=2703)
+
+<b>1)Enable Required Extenstions </b>
+
+
+
+
+
+
+
 
 
 
