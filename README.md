@@ -214,11 +214,87 @@ From the `osTicket-Installation-Files` folder unzip `osTicket-v1.15.8.zip` and c
 
 ![image](https://github.com/user-attachments/assets/bf3bdbfe-fb60-4316-9f6d-0ce5667cc920)
 
-<h3>Configure osTicket</h3> (Starts: 45:03  / Ends: )
+<h3>Configure osTicket</h3> (Starts: 45:01  / Ends: 49:18 )
 
-[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=eiBOqEK14c_zxCmm&t=2703)
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=eiBOqEK14c_zxCmm&t=2701)
 
-<b>1)Enable Required Extenstions </b>
+<b>1)Enable Required PHP Extenstions </b>
+
+Within the Internet Information Services Manager, navigate to `Sites` > `Default`> `PHP Manager` > `Enable or Disable an Extension`
+
+Enable the following extensions:
+
+<ul>
+   <b><li>php_imap.dll </li>
+   <li>php_intl.dll</li>
+   <li>php_opcache.dll</li></b>
+</ul>
+
+![image](https://github.com/user-attachments/assets/98c0fde1-c1d7-45ec-a745-be289fcd33c6)
+
+
+<b>2)Restart IIS</b>
+
+Restart IIS and navigate to `Sites` > `Default`> `osTicket`, then on the far right click `Browse *:80(http)`under <b>Browser Folder</b>
+
+![image](https://github.com/user-attachments/assets/6e50e06f-78f7-4c55-bcb5-881b543b0e9c)
+
+The osTicket installer page will populate as shown below:
+
+![image](https://github.com/user-attachments/assets/fc5c011a-2e67-49f2-b2e9-54d20552c406)
+
+
+<h3>Update osTicket Configuration Files</h3> (Starts: 49:20  / Ends: 55:33 )
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=VgycWsNZQVKw5_c4&t=2960)
+
+<b>1)Rename `ost-config.php`</b>
+
+Navigate to C:\ directory > inetpub > wwwwroot > osTicket > include > ost-sampleconfig.php
+
+Rename `ost-sampleconfig.php > `ost-config.php`
+
+![image](https://github.com/user-attachments/assets/3884b98c-a10e-46fb-8ee7-6a7cc0e11745)
+
+<b>2)Assign Permissions</b>
+
+Right-click on file: `ost-config.php`and select `Properties`
+
+![image](https://github.com/user-attachments/assets/aa79f2a6-a272-470e-a6b4-aca9dbb028d3)
+
+Select the `Security` tab and then `Advanced` on the bottom right. The Advanced Security Settings window will populate and then select `Disable Inheritance`
+
+![image](https://github.com/user-attachments/assets/c6cde89a-06cf-4433-b23e-0b15d223b6ff)
+
+Select `Remove all inherited permissions from this object` when the <b>Block Inheritance</b> window pops up
+
+![image](https://github.com/user-attachments/assets/e1a4a170-8a6c-4bce-856e-a502dd73f9d7)
+
+Select `Add` > `Select Principal` > Type `EVERYONE` underneath the <b>Enter the object name to select</b> box > `Check Names` > `OK`
+
+![image](https://github.com/user-attachments/assets/6a8fda0b-e0d8-4ac5-8128-8e4e710100ee)
+
+Once the object name is defined, select `Full Control` under <b>Basic Permissions</b> > OK > Apply
+
+![image](https://github.com/user-attachments/assets/aebac3c2-6af3-458c-be1d-bc9f7a0c4fb5)
+
+
+<h3>Complete osTicket Setup</h3> (Starts:   / Ends: )
+
+<b>1)Continue osTicket Setup</b>
+
+In the browser, select `Continue`
+
+
+
+
+
+
+
+
+
+
+
 
 
 
