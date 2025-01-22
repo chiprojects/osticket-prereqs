@@ -279,11 +279,35 @@ Once the object name is defined, select `Full Control` under <b>Basic Permission
 ![image](https://github.com/user-attachments/assets/aebac3c2-6af3-458c-be1d-bc9f7a0c4fb5)
 
 
-<h3>Complete osTicket Setup</h3> (Starts:   / Ends: )
+<h3>Complete osTicket Setup</h3> (Starts: 55:44  / Ends: )
+
+[![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=zIyOzUSVaDvkD0CJ&t=3344)
+
 
 <b>1)Continue osTicket Setup</b>
 
-In the browser, select `Continue`
+In the browser, select <b>Continue</b> to continue with the osTicket setup and set the following fields:
+
+- <b>Helpdesk Name</b>
+- <b>Default Email</b> (receives email from customers)
+- <b>Admin User</b>
+- <b>Database Settings
+    -MySQL Username:
+    -MYSQL Password:
+        - *<b>Note</b>*: The MySQL account information was created when `mysql-5.5.62-win32.msi` was installed. To sign into the SQL database, install HeidiSQL
+
+
+![image](https://github.com/user-attachments/assets/efc4cdef-2659-49c7-a733-4ab2f1dfe2be)
+
+![image](https://github.com/user-attachments/assets/656725c5-7ddb-4382-bb13-224f5184a5c2)
+
+
+<b>2)Install HeidiSQL and Configure Database</b>
+
+From the `osTicket-Installation-Files` folder, install HeidiSQL
+
+![image](https://github.com/user-attachments/assets/e452bfcc-0921-4ae7-bd2a-17c9a36aef17)
+
 
 
 
