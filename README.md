@@ -32,7 +32,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-<h3>Create Windows Virtual Machine in Azure</h3> (ENDS 13:29)
+<h3>Create Windows Virtual Machine in Azure</h3> (Ends: 13:29)
 
 [![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?start=000&amp;end=525;si=4RNq_shzXTkBosSz)
 
@@ -105,7 +105,7 @@ Enter the administrative account credentials created earlier in Azure when setti
 ![image](https://github.com/user-attachments/assets/1136f7c4-cd82-44d5-9dd9-38474c994391)
 
 
-<h3>Download and Prepare OS-Ticket Installation Files</h3> (Starts:17:43 / End:19:16)
+<h3>Download and Prepare OS-Ticket Installation Files</h3> (Starts:17:43 / Ends:19:16)
 
 [![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=ASNgp2CMuQ2tm0p6&t=1063)
 
@@ -279,7 +279,7 @@ Once the object name is defined, select `Full Control` under <b>Basic Permission
 ![image](https://github.com/user-attachments/assets/aebac3c2-6af3-458c-be1d-bc9f7a0c4fb5)
 
 
-<h3>Complete osTicket Setup</h3> (Starts: 55:44  / Ends: )
+<h3>Complete osTicket Setup</h3> (Starts: 55:44)
 
 [![Video Title](https://img.youtube.com/vi/OSTgG3tRP6Q/0.jpg)](https://youtu.be/OSTgG3tRP6Q?si=zIyOzUSVaDvkD0CJ&t=3344)
 
@@ -291,10 +291,10 @@ In the browser, select <b>Continue</b> to continue with the osTicket setup and s
 - <b>Helpdesk Name</b>
 - <b>Default Email</b> (receives email from customers)
 - <b>Admin User</b>
-- <b>Database Settings
-    -MySQL Username:
-    -MYSQL Password:
-        - *<b>Note</b>*: The MySQL account information was created when `mysql-5.5.62-win32.msi` was installed. To sign into the SQL database, install HeidiSQL
+- <b>Database Settings</b>
+    - MySQL Username:
+    - MySQL Password:
+      - *<b>Note</b>*: The MySQL account information was created when `mysql-5.5.62-win32.msi` was installed. To sign into the SQL database, install HeidiSQL
 
 
 ![image](https://github.com/user-attachments/assets/efc4cdef-2659-49c7-a733-4ab2f1dfe2be)
@@ -308,49 +308,29 @@ From the `osTicket-Installation-Files` folder, install HeidiSQL
 
 ![image](https://github.com/user-attachments/assets/e452bfcc-0921-4ae7-bd2a-17c9a36aef17)
 
+Once the HeidiSQL install is complete, reopen HeidiSQL to perform the following:
+
+- Create and connect to a new session by filling in the <b>Username</b>: root / <b>Password</b>\: root under the `Settings` tab > Open
+                                                                            
+![image](https://github.com/user-attachments/assets/1aba58ee-5493-49f7-8906-c20d8d04d05e)
+
+- Create a database by selecting the fishpole symbol to the left of `Unnamed` database and name the database `osTicket`
+
+![image](https://github.com/user-attachments/assets/6152a6ea-4d54-4ae3-afd3-9dade66affa1)
+
+<b>3)Finalize osTicket Installation</b>
+
+In the browser, complete the setup: 
+<b>MySQL Datbase:</b> osTicket and click <b>Install Now </b>
+
+![image](https://github.com/user-attachments/assets/3bbf39db-b3d8-4ebf-a14e-38811c78d800)
+
+Access your help desk login page using the following login page: `http://localhost/osTicket/scp/login.php`
+
+![image](https://github.com/user-attachments/assets/a0ff34d4-ef80-4f64-a60f-ddd3f0595668)
 
 
+<b>CONGRATULATIONS!</b> You have successfully installed and configured osTicket on your virtual machine. Your help desk is now ready to use!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>
-<img src="blank.jpg" height="250" width="500" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="40%" alt="Virtual Machine"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+- End Users osTicket URL: `http://localhost/osTicket/`
+- Helpdesk login page URL: `http://localhost/osTicket/scp/login.php`
